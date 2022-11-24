@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import GlobalStyle from "./assets/GlobalStyles"
+import GlobalStyle from "./assets/GlobalStyle.js"
 import React from "react"
-import LoginPage from "./pages/LoginPage/LoginPage"
+import HomePage from "./pages/HomePage/HomePage"
 
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
         <BrowserRouter>
             <GlobalStyle />
             <Routes>
-                <Route path="/" element={<LoginPage />} />
+                <Route path="/" element={<HomePage />} />
             </Routes>
         </BrowserRouter>
     )
